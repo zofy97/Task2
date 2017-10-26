@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package task2;
 
 /**
@@ -14,7 +9,7 @@ public class Student extends Person {
     String seminarGroup;
     
     public Student()    {
-        System.out.println("You are using the default constructor.");
+        
     }
     
     public Student(String sur, String fore, String date, int matric, String seminar)    {
@@ -22,6 +17,26 @@ public class Student extends Person {
         int matriculationNumber = matric;
         String seminarGroup = seminar;
     }
-    
-    
+
+    public int getMatriculationNumber() {
+        return matriculationNumber;
+    }
+
+    public void setMatriculationNumber(int matriculationNumber) {
+        this.matriculationNumber = matriculationNumber;
+    }
+
+    public String getSeminarGroup() {
+        return seminarGroup;
+    }
+
+    public void setSeminarGroup(String seminarGroup) {
+        this.seminarGroup = seminarGroup;
+    }
+
+    @Override
+    public String toString() {
+        return "Nachname: " + surname + ", Vorname: " + forename + ", Geburtstag: " + dateOfBirth + "Matrikelnummer: " + matriculationNumber + ", Seminargruppe: " + seminarGroup;
+    }
+
 }

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package task2;
 
 /**
@@ -15,7 +10,7 @@ public class Person {
     String dateOfBirth;
     
     public Person() {
-        System.out.println("You are using the default constructor.");
+        
     }
     
     public Person(String sur, String fore, String date) {
